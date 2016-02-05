@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skrm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+          
+         >
+        <activity
+            android:label="@string/app_name"
+            android:name=".SkrmActivity" 
+          android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity
+            android:label="@string/app_name"
+            android:name=".NonViolence"
+          android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+              </activity>
+              
+        <activity
+            android:label="@string/app_name"
+            android:name=".BacksideActivity"
+          android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+              </activity>
+              
+       <activity
+            android:label="@string/app_name"
+            android:name=".ViewFlipperSampleActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow"
+             >
+              </activity>
+              
+       <activity
+            android:label="@string/app_name"
+            android:name=".ListActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+              
+       <activity
+            android:label="@string/app_name"
+            android:name=".DairyOptionActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+              
+       <activity
+            android:label="@string/app_name"
+            android:name=".tablayout"
+            android:theme="@android:style/Theme.Holo.Light"
+            
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+              
+       <activity
+            android:label="@string/app_name"
+            android:name=".ListMissedDates"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+              
+        <activity
+            android:label="@string/app_name"
+            android:name=".ExpandMain"
+           android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+              
+        <activity
+            android:label="@string/app_name"
+            android:name=".ExtraActivity"
+           android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="portrait"
+        
+             >
+              </activity>
+            <provider
+            android:name="com.skrm.SkrmContentProvider"
+            android:authorities="com.skrm.SkrmContentProvider" >
+        </provider>
+        
+            <provider
+            android:name="com.skrm.SkrmContentProviderAll"
+            android:authorities="com.skrm.SkrmContentProviderAll" >
+        </provider>
+    </application>
+
+</manifest>
